@@ -34,5 +34,5 @@ url2 = 'http://localhost:81/dev-api/getInfo'
 def test_2():
     res2 = s.get(url2)
     print(res2.json())
-    assert res2.json()['code'] == 200
+    assert res2.json()['code'] == 500
     assert res2.json()['msg'] == "操作成功"
